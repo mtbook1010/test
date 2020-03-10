@@ -1,0 +1,35 @@
+.footer {
+  background-color: #054060;
+  margin-top: 5.34rem;
+  padding: 6.7rem 0 1.9rem 0;
+  &__facebook {
+    background-color: $color-white;
+    height: 118px;
+    line-height: 118px;
+    margin: 0 auto;
+    text-align: center;
+    width: 352px;
+  }
+  &__ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  &__li {
+    font-size: 1.9rem;
+    &:not(:first-of-type) {
+      border-left: 1px solid $color-white;
+      margin-left: 1rem;
+      padding-left: 1rem;
+    }
+  }
+  &__link {
+    color: $color-white;
+  }
+  &__copyright {
+    color: $color-white;
+    font-size: 1.1rem;
+    margin-top: 2.7rem;
+    text-align: center;
+  }
+}

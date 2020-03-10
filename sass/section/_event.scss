@@ -1,0 +1,147 @@
+.event {
+  &__inner {
+    position: relative;
+    text-align: center;
+  }
+  &__container {
+    display: flex;
+  }
+  &__title {
+    color: $color-font;
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin-top: 5.7rem;
+    text-align: center;
+    &:before {
+      background-color: $color-main;
+      content: "";
+      display: inline-block;
+      height: 4px;
+      left: 50%;
+      position: absolute;
+      top: 46px;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      width: 92px;
+    }
+  }
+  &__card {
+    background-color: $color-white;
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.05);
+    display: flex !important;
+    height: 295px;
+    max-width: 454px;
+    margin: 8.7rem auto 0;
+  }
+  &__text-box {
+    padding: 3rem 3rem 0 3rem;
+    position: relative;
+  }
+  &__sub-title {
+    color: $color-main;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left;
+  }
+  &__time {
+    color: $color-font;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    text-align: left;
+  }
+  &__place {
+    color: $color-font;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 0.8rem;
+    text-align: left;
+  }
+  &__text {
+    color: $color-font;
+    font-size: 1rem;
+    margin-top: 2rem;
+    text-align: left;
+  }
+  &__tag-box {
+    margin-top: 2rem;
+    text-align: left;
+  }
+  &__tag {
+    background-color: #fff602;
+    border-radius: 13px;
+    color: #212121;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 0.7rem;
+    padding: 0.5rem 1.3rem;
+  }
+  &__btn {
+    background-color: $color-main;
+    bottom: 0;
+    color: $color-white;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    position: absolute;
+    right: 0;
+  }
+  &__indicator {
+    position: absolute;
+    bottom: 120px;
+    left: 400px;
+    z-index: -1;
+  }
+  &__more {
+    border: 4.5px solid $color-main;
+    display: inline-block;
+    margin-top: 7.2rem;
+    &--link {
+      color: $color-main;
+      font-size: 2.3rem;
+      font-weight: bold;
+      padding: 1.6rem 5.6rem;
+    }
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.slider {
+  width: 90%;
+  margin: 0 auto 80px;
+}
+.slick-slide img {
+  width: 100%;
+  height: auto;
+}
+.mypattern {
+  width: 100%;
+}
+.mypattern .slick-slide {
+  margin: 5px;
+}
+.slick-dots {
+  bottom: -49px;
+  li {
+    margin: 0px -18px;
+    width: 154px;
+    button {
+      content: url("../img/dot1.png");
+    }
+  }
+}
+
+.slick-dots li.slick-active button:before {
+  content: url("../img/dots.png");
+  opacity: 1;
+}
+.slick-dots li button:before {
+  opacity: 1;
+}
+.slick-dots li button:before {
+  content: none;
+}

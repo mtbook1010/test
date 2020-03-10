@@ -1,0 +1,119 @@
+.interview {
+  &__inner {
+    position: relative;
+    text-align: center;
+  }
+  &__title {
+    color: $color-font;
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin-top: 5.7rem;
+    text-align: center;
+    &:before {
+      background-color: $color-main;
+      content: "";
+      display: inline-block;
+      height: 4px;
+      left: 50%;
+      position: absolute;
+      top: 46px;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      width: 92px;
+    }
+  }
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1089px;
+    margin: 8.3rem auto 0;
+  }
+  &__card {
+    background-color: $color-white;
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.05);
+    display: flex;
+    height: 221px;
+    max-width: 522px;
+    &:nth-of-type(even) {
+      margin-left: 3.7rem;
+    }
+    &:nth-of-type(3),
+    &:nth-of-type(4) {
+      margin-top: 3.7rem;
+    }
+    &--link {
+      color: $color-white;
+      padding: 0.5rem 2rem;
+    }
+  }
+  &__img {
+    width: 203px;
+  }
+  &__text-box {
+    padding: 1.8rem 0 0 1.8rem;
+    position: relative;
+  }
+  &__sub-title {
+    color: $color-main;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: left;
+  }
+  &__time {
+    color: #b5b5b5;
+    display: block;
+    font-size: 1.1rem;
+    margin-top: 0.8rem;
+    text-align: left;
+  }
+  &__name {
+    align-items: flex-end;
+    color: $color-font;
+    display: flex;
+    margin-top: 1.2rem;
+    text-align: left;
+    &--company {
+      font-size: 1.7rem;
+      font-weight: bold;
+    }
+    &--person {
+      font-size: 1.9rem;
+      font-weight: bold;
+      margin-left: 1.3rem;
+    }
+  }
+  &__tag-box {
+    margin-top: 1.5rem;
+    text-align: left;
+  }
+  &__tag {
+    background-color: #fff602;
+    border-radius: 13px;
+    color: #212121;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 0.7rem;
+    padding: 0.5rem 1.3rem;
+  }
+  &__btn {
+    background-color: $color-main;
+    bottom: 0;
+    color: $color-white;
+    display: inline-block;
+    font-size: 1.2rem;
+    position: absolute;
+    right: 0;
+  }
+  &__more {
+    border: 4.5px solid $color-main;
+    display: inline-block;
+    margin-top: 7.2rem;
+    &--link {
+      color: $color-main;
+      font-size: 2.3rem;
+      font-weight: bold;
+      padding: 1.6rem 5.6rem;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+.magazine {
+  &__inner {
+    position: relative;
+    text-align: center;
+  }
+  &__title {
+    color: $color-font;
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin-top: 12.64rem;
+    text-align: center;
+    &:before {
+      background-color: $color-main;
+      content: "";
+      display: inline-block;
+      height: 4px;
+      left: 50%;
+      position: absolute;
+      top: 46px;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      width: 92px;
+    }
+  }
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1089px;
+    margin: 8.3rem auto 0;
+  }
+  &__link {
+    &:nth-of-type(even) {
+      margin-left: 3.7rem;
+    }
+    &:nth-of-type(3),
+    &:nth-of-type(4) {
+      margin-top: 3.7rem;
+    }
+  }
+  &__card {
+    background-color: $color-white;
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.05);
+    height: 417.6px;
+    max-width: 522px;
+  }
+  &__sub-title {
+    color: $color-font;
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin: 1.3rem 0 0 2rem;
+    text-align: left;
+  }
+  &__time {
+    color: #b7b7b7;
+    display: block;
+    font-size: 1.2rem;
+    margin: 1rem 0 0 2rem;
+    text-align: left;
+  }
+  &__more {
+    border: 4.5px solid $color-main;
+    display: inline-block;
+    margin-top: 7.2rem;
+    &--link {
+      color: $color-main;
+      font-size: 2.3rem;
+      font-weight: bold;
+      padding: 1.6rem 5.6rem;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.header {
+  // position: fixed; /* 固定 */
+  background-color: $color-white;
+  box-shadow: 0 2px 6px 0 rgba(136, 136, 136, 0.4);
+  top: 0; /* 一番上に表示 */
+  width: 100%; /* 中央に表示 */
+  z-index: 100;
+  &__inner {
+    align-items: center;
+    display: flex;
+    height: 106px;
+    justify-content: space-between;
+    padding: 0 5rem;
+  }
+  &__img {
+    width: 180px;
+  }
+  &__ul {
+    align-items: center;
+    display: flex;
+  }
+  &__li {
+    font-size: 1.6rem;
+    &:not(:first-of-type) {
+      margin-left: 4rem;
+    }
+    &--link {
+      color: $color-main;
+      font-weight: bold;
+    }
+  }
+  form {
+    display: flex;
+    margin-left: 4rem;
+  }
+  input[type="search"] {
+    border: 1px solid $color-main;
+    height: 30px;
+    padding: 0 10px;
+    width: 150px;
+  }
+  input[type="image"] {
+    background-color: $color-main;
+    border: 0;
+    height: 30px;
+    padding: 5px;
+    width: 30px;
+  }
+}
